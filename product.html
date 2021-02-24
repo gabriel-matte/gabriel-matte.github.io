@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/welcome.css">
+        <link rel="stylesheet" href="css/product.css">
+        <title>Store - Product</title>
+        <link rel="icon" href="musicImages/guitarLogoOrange.png">
+        <script src="js/productList.js"></script>
+        <script src="js/featureScript.js"></script>
+        <script src="js/productScript.js"></script>
+        
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-custom navbar-expand-sm">
+            <img class="navbar-brand" src="musicImages/guitarLogoOrange.png">
+            <a class="navbar-brand" href="index.html">MusicMan Guitars</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html?text=acoustic">Acoustic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html?text=electric">Electric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html?text=amplifier">Amplifiers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Find Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">My Cart</a>
+                    </li>
+                </ul>
+                <form action="search.html" method="GET" class="form-inline">
+                    <input class="form-control ml-sm-2" type="search" name="text" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Product Page -->
+        <div class="container-fluid">
+            <div class="row margin-sm productRow">
+                <div class="col-md-9 col-lg-4 productImage">
+                    <div class="row productBody justify-content-between">
+                        <div class="col" id="thumbColumn">
+                            <!-- Product thumbnail images go here (through javascript) -->                      
+                        </div>
+                        <div class="col imagePrimaryBox">
+                            <img id="image1" class="imagePrimary" src="">                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-9 col-lg-5 productDescription">
+                    <div class="productBody">
+                        <h1 id="prodName">Placeholder</h1>
+                        <p id="prodDescription"></p>
+                        <h5>Features</h5>
+                        <ul id="featureList"></ul>
+                        <p id="moreDescription"></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2 orderInfo">
+                    <div class="productBody">
+                        <h3 id="price" class="price"></h3>
+                        <p>* Price does not include sales tax. Sales tax will be calculated at checkout.</p>
+                        <h3 id="rating"></h3>
+                        <form class="productForm">
+                            <select id="selectQuantity" class="select mr-sm-3" onchange="calcPrice()">
+                                <option selected disabled>Quantity</option>
+                                <option id="q1" value="1">1</option>
+                                <option id="q2" value="2">2</option>
+                                <option id="q3" value="3">3</option>
+                            </select>
+                            <br>
+                            <div>
+                                <button type="submit" class="btn btn-outline-dark addCart">Add to Cart</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Similar Products -->
+        <div class="container-fluid featuredBanner" id="similarBanner">
+            <div class="col-xs-12 similarBanner">
+                <h2>Similar Products</h2>
+            </div>
+            <div class="row" id="similarBanner">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="container featureHome" id="feature1">
+                            <img class="thumbnail" src="" href="">
+                            <h5><a class="button" id="feature1" href=""></a></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="container featureHome" id="feature2">
+                            <img class="thumbnail" src="" href="">
+                            <h5><a class="button" href=""></a></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="container featureHome" id="feature3">
+                            <img class="thumbnail" src="musicImages/OrangeAmp.jpg" href="">
+                            <h5><a class="button" href=""></a></h5>
+                            <p></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+            <!-- Footer -->
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="container footStuff">
+                        <h5>Check out our stores in Ottawa:</h5>
+                        <ul>
+                            <li>Rideau Centre</li>
+                            <li>Bayshore Shopping Centre</li>
+                            <li>Tim's Garage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="container footStuff">
+                        <h5>Contact Us</h5>
+                        <p>Phone: (613) 123-4567</p>
+                        <p>Email: something@musicshop.com</p>
+                        <p>Fax: What? Who owns one of these anymore?</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 ">
+                    <div class="container footStuff">
+                        <h5>Check us out on Social Media</h5>
+                        <p>Just kidding, we don't have any social media.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

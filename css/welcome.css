@@ -1,0 +1,114 @@
+/* General Styles */
+/* Colors:
+    Mandarin: #EF8354
+    Silver: #BFC0C0
+    Light Blue: #4F5D75
+    Dark Blue: #2D3142
+*/
+
+h2 {
+    padding: 20px;
+    color: #e4561e;
+}
+/* Style Elements for the Navigation Bar */
+.navbar-custom {
+    background-color: #2D3142;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: #BFC0C0;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #EF8354;
+}
+
+
+.navbar img {
+    max-height: 2%;
+    max-width: 2%;
+}
+.navbar button {
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+}
+
+/* Style Elements for the Welcome Banner */
+
+.imgBanner {
+    height: 400px;
+    color: white;
+    background-color: black;
+    background-image: url(../musicImages/GuitarBGTest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imgBanner .welcomeText {
+    height: 100%;
+    max-width: 500px;
+    color: white;
+    padding: 75px;
+    padding-left: 120px;
+}
+
+.welcomeText h1 {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #e4561e;
+}
+
+.welcomeText h1 {
+    padding-bottom: 15px;
+}
+
+/* Style Elements for the Featured Products Banner */
+.featuredBanner {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.featureHome {
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    border-color: #e4561e;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+.button {
+    color: #e4561e;
+}
+
+.thumbnail {
+    max-height: 100px;
+    max-width: 200px;
+    margin: 15px;
+    padding: auto;
+}
+
+/* Style for the Footer */
+.footer {
+    background-color: #BFC0C0;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #4F5D75;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footstuff {
+    width: 100px;
+    height: 300px;
+    margin: 30px auto;
+    padding: auto;
+}
+

@@ -1,0 +1,111 @@
+.sortby {
+    text-align: center;
+    margin-top: 0;
+    width: 800px;
+}
+
+.sortoptions {
+    width: 250px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.search-bar {
+    margin-top:20px;
+    width: 50%;
+    text-align: center;
+}
+.search-bar .input-large {
+    text-align: center;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.search-refine-box {
+    min-width: 200px;
+    min-height: 1200px;
+    max-height: 1600px;
+}
+
+.grey-orange-b {
+    background-color: #e7e7e7;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: #EF8354;
+    height: ;
+}
+
+.search-refine {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #2D3142;
+}
+
+.search-refine-choice {
+    display: block;
+    padding-left: 20px;
+}
+
+.search-refine h4 {
+    text-decoration: underline;
+    text-decoration-color: #EF8354;
+}
+
+#minprice {
+    margin-bottom: 5px;
+}
+
+.search-refine button{
+    margin-top: 15px;
+}
+
+.search-results {
+    text-align: center;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+.search-result-item {
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    text-align: center;
+    margin: 4px;
+    padding: 0;
+    transition: 0.2s;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;    
+    position: relative;
+}
+
+.starRating {
+    color: #EF8354;
+    
+}
+.priceRating {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    margin-left: 79px;
+    margin-right: auto;
+}
+
+.thumbnail-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.thumbnail-rating {
+    width: 150px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+

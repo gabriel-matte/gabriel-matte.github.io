@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+.productBody {
+    height: 100%;
+    width: 100%;
+}
+
+.productRow {
+    min-height: 500px;
+}
+
+.margin-sm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imageThumbSlot {
+    width: 100px;
+    height: 100px;
+    background-image: url(../musicImages/NormanCherryAcousticBack.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    border-color: #BFC0C0;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+#thumbColumn {
+    max-width: 150px;
+    text-align: left;
+}
+
+.imagePrimaryBox {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.imagePrimary {
+    max-height: 500px;
+    max-width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 1s;
+}
+
+
+.productDescription {
+    padding: 20px;
+}
+
+#prodName {
+    border-bottom: 2px solid #EF8354;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.orderInfo {
+    height: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 30px;
+    border: solid 1px #e4561e;
+    background-color: rgb(243, 243, 243);
+}
+
+.price {
+    color: #e4561e;
+}
+
+.thumbnail-rating {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.addCart {
+    margin-top: 15px;
+}
+
+#rating {
+    color: #e4561e;
+    text-shadow: 1px 1px black;
+    margin-bottom: 20px;
+}
+
+#similarBanner {
+    text-align: center;
+    background-color: #4F5D75;
+    margin-bottom: 0;
+}
+
+#similarBanner h2 {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #e4561e;
+}
+

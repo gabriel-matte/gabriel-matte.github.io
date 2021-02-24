@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/welcome.css"> 
+        <link rel="stylesheet" href="css/search.css">
+        <title>Store - Search</title>
+        <link rel="icon" href="musicImages/guitarLogoOrange.png">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-custom navbar-expand-sm">
+            <img class="navbar-brand" src="musicImages/guitarLogoOrange.png">
+            <a class="navbar-brand" href="index.html">MusicStuff Guitars</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html?text=acoustic">Acoustic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html?text=electric">Electric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html?text=amplifier">Amplifiers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Find Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">My Cart</a>
+                    </li>
+                </ul>
+                <form action="search.html" method="GET" class="form-inline">
+                    <input class="form-control ml-sm-2" type="search" name="text" placeholder="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Side Refine Search Bar -->
+        <div class="container-fluid refine">
+            <div class="row">
+                
+                <!-- Top Banner with Search Bar and Sorting Filters -->
+                <div class="col-sm-10 order-md-2">
+                    <span class="search-bar">
+                        <form action="search.html" method="GET" name="text"  class="search-bar ml-auto mr-auto">
+                            <input class="form-control input-normal" type="search" name="text" placeholder="Search Products">
+                            <button class="invisible" type="submit"></button>
+                        </form>
+                    </span>
+                    <div class="row sortby mr-auto ml-auto">
+                        <div class="container sortoptions mr-auto ml-auto">
+                            <h5>Sorty by Price: </h5>
+                            <span class="btn-group" role="group">   
+                                <button id="sortPriceAsc" class="btn btn-secondary" type="button">Low - High</button>
+                                <button id="sortPriceDes" class="btn btn-secondary" type="button">High - Low</button>
+                            </span>        
+                        </div>
+                        <div class="container sortoptions mr-auto ml-auto">   
+                            <h5>Sorty by Rating: </h5>                
+                            <span class="btn-group" role="group">
+                                <button id="sortRatingAsc" class="btn btn-secondary" type="button">Low - High</button>
+                                <button id="sortRatingDes" class="btn btn-secondary" type="button">High - Low</button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Search Results Displayed in Grid -->
+                    <div id="resultsGrid" class="row search-results mr-auto ml-auto">
+                        
+                        <!-- <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/GibsonLesPaulThumb.jpg">
+                            <h5><a class="button" id="search-result-1" href=""></a></h5>
+                            <h7>$0.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span>
+
+                        <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/Fender-Placeholder.jpg">
+                            <h5><a class="button" id="search-result-2" href="">Placeholder</a></h5>
+                            <h7>$000.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span>
+                        <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/Fender-Placeholder.jpg">
+                            <h5><a class="button" id="search-result-3" href="">Placeholder</a></h5>
+                            <h7>$000.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span>
+                        <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/Fender-Placeholder.jpg">
+                            <h5><a class="button" id="search-result-4" href="">Placeholder</a></h5>
+                            <h7>$000.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span>
+                        <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/Fender-Placeholder.jpg">
+                            <h5><a class="button" id="search-result-5" href="">Placeholder</a></h5>
+                            <h7>$000.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span>
+                        <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/Fender-Placeholder.jpg">
+                            <h5><a class="button" id="search-result-5" href="">Placeholder</a></h5>
+                            <h7>$000.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span>
+                        <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/Fender-Placeholder.jpg">
+                            <h5><a class="button" id="search-result-5" href="">Placeholder</a></h5>
+                            <h7>$000.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span>
+                        <span class="container search-result-item">
+                            <img class="thumbnail" src="musicImages/Fender-Placeholder.jpg">
+                            <h5><a class="button" id="search-result-5" href="">Placeholder</a></h5>
+                            <h7>$000.00</h7>
+                            <img class="thumbnail-rating mr-auto ml-auto" src="musicImages/five-star.png">
+                        </span> -->
+                    </div>
+
+                </div>
+
+                <div class="col-sm-2 order-md-1 grey-orange-b search-refine-box">
+                    <form class="search-refine">
+                        <h4>Refine Search</h4>
+                        <h6>Catergory</h6>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="category1" name="category" value="acoustic">
+                            <label for="category1">Acoustic Guitars</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="category2" name="category" value="electric">
+                            <label for="category2">Electric Guitars</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="category3" name="category" value="hybrid">
+                            <label for="category3">Acoustic/Electric Hybrids</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="category4" name="category" value="amplifier">
+                            <label for="category4">Amplifiers</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="category5" name="category" value="accessories">
+                            <label for="category5">Accessories</label>
+                        </div>
+                        <h6>Brand</h6>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="brand1" name="brand" value="fender">
+                            <label for="brand1">Fender</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="brand2" name="brand" value="gibson">
+                            <label for="brand2">Gibson</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="brand3" name="brand" value="Norman">
+                            <label for="brand3">Norman</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="brand4" name="brand" value="yamaha">
+                            <label for="brand4">Yamaha</label>
+                        </div>
+                        <h6>Rating</h6>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="rating5" name="rating" value="5">
+                            <label for="rating5">5 Stars</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="rating4" name="rating" value="4">
+                            <label for="rating4">4 Stars</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="rating3" name="rating" value="3">
+                            <label for="rating3">3 Stars</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="rating2" name="rating" value="2">
+                            <label for="rating2">2 Stars</label>
+                        </div>
+                        <div class="search-refine-choice">
+                            <input type="checkbox" id="rating1" name="rating" value="1">
+                            <label for="rating1">1 Star</label>
+                        </div>
+                        <h6>Price</h6>
+                        <span>
+                            <input class="form-control" type="text" id="minprice" name="minprice" placeholder="Min Price">
+                            <input class="form-control" type="text" id="maxprice" name="maxprice" placeholder="Max Price">
+                        </span>
+                        <button class="btn btn-outline-dark" type="submit">Refine Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="container footStuff">
+                        <h5>Check out our stores in Ottawa:</h5>
+                        <ul>
+                            <li>Rideau Centre</li>
+                            <li>Bayshore Shopping Centre</li>
+                            <li>Tim's Garage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="container footStuff">
+                        <h5>Contact Us</h5>
+                        <p>Phone: (613) 123-4567</p>
+                        <p>Email: something@musicshop.com</p>
+                        <p>Fax: What? Who owns one of these anymore?</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 ">
+                    <div class="container footStuff">
+                        <h5>Check us out on Social Media</h5>
+                        <p>Just kidding, we don't have any social media.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/productList.js"></script>
+        <script src="js/search.js"></script>
+    </body>
+</html>
