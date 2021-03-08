@@ -33,7 +33,7 @@
     border-right-width: 2px;
     border-right-style: solid;
     border-right-color: #EF8354;
-    height: ;
+    /* height: ; */
 }
 
 .search-refine {
@@ -74,7 +74,7 @@
     text-align: center;
     margin: 4px;
     padding: 0;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
 .box {
     width: 300px;
